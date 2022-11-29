@@ -341,6 +341,11 @@ input:focus,
   display: block;
 }
 
+.message p {
+  font-size: 0.8rem;
+  color: var(--errors);
+}
+
 .wrong-value {
   border: 3px solid var(--errors);
 }/*# sourceMappingURL=main.css.map */

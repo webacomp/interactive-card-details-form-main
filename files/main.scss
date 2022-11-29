@@ -380,6 +380,13 @@ input,
   display: block;
 }
 
+.message {
+	p {
+		font-size: .8rem;
+		color: var(--errors);
+	}
+}
+
 
 .wrong-value {
    border: 3px solid var(--errors);

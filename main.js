@@ -27,20 +27,40 @@ function initDataCard() {
 	year.textContent = '00';
 }
 initDataCard();
+
+function createMessage() {
+	const p = document.createElement('p');
+
+	if (p.textContent === '') {
+		p.textContent = 'Wrong format , numbers only'
+	}
+	if (p.textContent !== '') {
+		p.textContent = ''
+	}
+	document.getElementById('message').appendChild(p);
+}
 //Inputs
 
 nameEl.addEventListener('input', (e) => {
 	userName.textContent = e.target.value;
 });
+
+
+
 numberEl.addEventListener('input', (e) => {
 	userNumbers.textContent = e.target.value;
 
 	if (!e.target.value.match(numbers)) {
 		numberEl.classList.add('wrong-value');
+
+		createMessage()
+
+		
 	}
-	
-	if(e.target.value.match(numbers)) {
+
+	if (e.target.value.match(numbers)) {
 		numberEl.classList.remove('wrong-value');
+		createMessage()
 	}
 });
 
