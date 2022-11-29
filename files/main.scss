@@ -113,8 +113,10 @@ body {
 
 	overflow: hidden;
 
-	@include mq(md) {
+	@include mq(xl) {
+		
 		display: flex;
+		
 	    align-items: center;
 		
 		
@@ -328,19 +330,25 @@ input,
 	width: 210px;
 }
 
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /*Success*/
 
 .final {
 	display: none;
 	text-align: center;
 
-	position: absolute;
-	top: 15em;
-	left: 0;
+	position: fixed;
+	
+	top: 11em;
 
 	@include mq(md) {
-		top: 7.955em;
-		left: 42.3em;
+		top: 10em;
+		right: -10em;
 
 		background-color: var(--neutral-100);
 	}
@@ -372,4 +380,8 @@ input,
   display: block;
 }
 
+
+.wrong-value {
+   border: 3px solid var(--errors);
+}
 

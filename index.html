@@ -26,7 +26,7 @@
 				</div>
 				<div class="header__card-logo"></div>
 				<div class="header__images">
-					<p class="header__card-numbers">0000 0000 0000 00000</p>
+					<p class="header__card-numbers"></p>
 					<img
 						class="header__front-card"
 						src="images/bg-card-front.png"
@@ -36,14 +36,15 @@
 					<div class="header__row-data">
 						<p></p>
 						<div class="header__row-datum">
-							<span id="month">00 /</span>
-							<span id="year">00</span>
+							<span id="month"></span>
+							<span id="year"></span>
 						</div>
 					</div>
-                    
-					<p class="card__cvv" ></p>
+
+					<p class="card__cvv"></p>
 					<img
-						class="header__back-card" id="card_cvv"
+						class="header__back-card"
+						id="card_cvv"
 						src="images/bg-card-back.png"
 						alt="Front card"
 					/>
@@ -64,8 +65,8 @@
 						/>
 						<label for="">Card Number</label>
 						<input
-							type="text"
-							class="number"
+							type="number"
+							class="number "
 							placeholder="e.g. 1234 5678 9123 0000"
 							required
 						/>
@@ -98,19 +99,19 @@
 					<button id="confirm" class="btn">Confirm</button>
 				</div>
 			</div>
-		</main>
 
-		<!-- Completed state start -->
+			<!-- Completed state start -->
 
-		<div class="final card__container" id="message">
-			<div class="final__success">
-				<img src="images/icon-complete.svg" alt="" />
+			<div class="final card__container" id="message">
+				<div class="final__success">
+					<img src="images/icon-complete.svg" alt="" />
+				</div>
+
+				<h1 class="final__title">Thank you!</h1>
+
+				<p class="final__display-info">We've added your card details</p>
+				<button id="continue" class="btn btn-continue">Continue</button>
 			</div>
-
-			<h1 class="final__title">Thank you!</h1>
-
-			<p class="final__display-info">We've added your card details</p>
-			<button id="continue" class="btn btn-continue">Continue</button>
-		</div>
+		</main>
 	</body>
 </html>
